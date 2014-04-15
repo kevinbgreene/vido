@@ -1,0 +1,11 @@
+<div
+	class="vido-video-player fill"
+	enter="showController()"
+	move="showController()"
+	ng-class="{'show-playlist' : meta.showPlaylist}">
+	        	
+	<vido-playlist ng-if="meta.hasPlaylist"></vido-playlist>
+
+	<vido-video-container></vido-video-container>
+
+</div>

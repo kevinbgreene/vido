@@ -1,0 +1,19 @@
+{
+  "name": "Vido-Video-Player",
+  "version": "0.8.0",
+  "description": "HTML5 video player with Flash fallback.",
+  "main": "vido.build.0.8.0.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "express": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git@github.com:kevinbgreene/vido.git",
+  "author": "Kevin B. Greene",
+  "license": "BSD"
+}

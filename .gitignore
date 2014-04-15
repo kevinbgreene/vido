@@ -1,0 +1,9 @@
+_notes.txt
+_snippets.js
+dev/js/vendor
+node_modules
+bower_components
+.DS_Store
+.sass-cache
+server.js
+test

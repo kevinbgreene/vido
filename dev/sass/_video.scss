@@ -1,0 +1,101 @@
+.vido-video-placeholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.vido-video-player {
+
+	position: relative;
+
+	.vido-video-container {
+
+		background: #000;
+		box-shadow: 0 0 10px #000;
+		overflow: hidden;
+
+		@include trans(left 0.5s);
+
+		video {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #000;
+		}
+	}
+
+	.vido-flash-container,
+	.vido-flash-context {
+		background: #000;
+	}
+
+	.vido-video-controls {
+		position: absolute;
+		z-index: 2;
+	}
+	
+	&.show-playlist {
+		
+		.vido-video-container,
+		.vido-video-controls {
+
+			left: 300px;
+		}
+	}
+}
+
+.vido-play-button {
+
+	img {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 50%;
+		left: 50%;
+		margin: -50px 0 0 -50px;
+		cursor: pointer;
+		opacity: 0.7;
+		z-index: 2;
+
+		@include trans(opacity 0.3s);
+
+		&:hover {
+			opacity: 1.0;
+		}
+	}
+}
+
+.vido-loading {
+
+	background: #000;
+	background: rgba(0,0,0,0.3);
+
+	p {
+		position: absolute;
+		line-height: 40px;
+		text-align: center;
+		color: #fff;
+		font-size: 1.1em;
+		width: 100%;
+		top: 50%;
+		margin-top: -20px;
+	}
+}
+
+.animate.ng-hide-add,
+.animate.ng-hide-remove {
+	@include trans;
+  	display: block !important;
+}
+
+.animate.ng-hide-remove,
+.animate.ng-hide-add.ng-hide-add-active {
+	opacity: 0.0;
+}
+
+.animate.ng-hide-add,
+.animate.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1.0;
+}

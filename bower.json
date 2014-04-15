@@ -1,0 +1,21 @@
+{
+  "name": "Vido-Video-Player",
+  "description": "HTML5 video player with Flash fallback.",
+  "version": "0.8.0",
+  "authors": [
+    "Kevin Greene <hightimesteddy@gmail.com>"
+  ],
+  "main": "vido.build.0.8.0.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": "1.10",
+    "angular": "~1.2.0-rc.3",
+    "angular-animate": "~1.2.0-rc.3",
+    "swfobject": "*"
+  },
+  "repository": "git@github.com:kevinbgreene/vido.git"
+}

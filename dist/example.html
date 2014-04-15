@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <!--[if lte IE 8]>
+      	<script>
+        	
+        	document.createElement('vido-video-player');
+        	document.createElement('vido-playlist');
+        	document.createElement('vido-video-container');
+        	document.createElement('vido-video-element');
+        	document.createElement('vido-loading');
+        	document.createElement('vido-play-button');
+        	document.createElement('vido-playlist-button');
+        	document.createElement('vido-share-view');
+        	document.createElement('vido-controlbar');
+        	document.createElement('vido-html-element');
+        	document.createElement('vido-flash-element');
+        	document.createElement('vido-fullscreen-button');
+        	document.createElement('vido-progress-bar');
+
+      	</script>
+    	<![endif]-->
+        
+        <title>Glidewell Video Watch</title>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    </head>
+    
+    <body ng-app="vido">
+
+        <vido-video-player></vido-video-player>
+
+        <script src="js/vido.build.0.8.0.js"></script>
+
+        <script>
+
+        	angular.module('vido')
+
+        	.run(['vido.config', function(config) {
+			
+				config.set('video-path', 'json/videos.041114a.js');
+
+			}]);
+
+        </script>
+        
+    </body>
+
+</html>

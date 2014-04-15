@@ -1,0 +1,53 @@
+<div class="vido-controller">
+
+	<vido-progress-bar></vido-progress-bar>
+
+	<div class="vido-controlbar">
+
+		<div
+			class="button toggle_btn play_btn"
+			ng-click="meta.isPlaying=!meta.isPlaying"
+			ng-class="{active_btn : meta.isPlaying}">
+
+			<img class="up_state" src="assets/play-button.png" />
+			<img class="down_state" src="assets/pause-button.png" />
+
+		</div>
+		
+		<div
+			class="button toggle_btn mute_btn"
+			ng-click="meta.isMuted=!meta.isMuted"
+			ng-class="{active_btn : meta.isMuted}">
+			
+			<img class="up_state" src="assets/mute-button.png" />
+			<img class="down_state" src="assets/unmute-button.png" />
+
+		</div>
+		
+		<div class="vido-video-timer">
+			<span>{{meta.currentTime}} / {{meta.duration}}</span>
+		</div>
+		
+		<div
+			class="button toggle_btn share_btn"
+			ng-click="meta.isSharing=!meta.isSharing"
+			ng-class="{active_btn : meta.isSharing}"
+			ng-show="meta.canShare">
+			
+			<img src="assets/share-button.png" />
+		
+		</div>
+
+		<div
+			class="button toggle_btn resolution_btn"
+			ng-click="meta.isHD=!meta.isHD"
+			ng-class="{active_btn : meta.isHD}">
+
+			<img class="up_state" src="assets/hd-button.png" />
+			<img class="down_state" src="assets/standard-button.png" />
+
+		</div>
+
+	</div>
+
+</div>

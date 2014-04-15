@@ -1,0 +1,83 @@
+<div
+	class="vido-share-view animate"
+	style="display: none !important;">
+
+	<div class="inset">
+
+		<h2>Share this Video:</h2>
+
+		<p
+			class="close-button"
+			ng-click="toggleShare($event)">Close</p>
+	
+		<div class="vido-socialbox">
+				
+			<p class="label">Social Networks:</p>
+
+			<p class="content">
+				
+				<div class="vido-socialbar-button">
+					
+					<a href="http://www.facebook.com/sharer.php?u={{shareUrl}}" target="_blank">
+						
+						<img src="assets/facebook-button.png" width="30" height="30" />
+						<p>Post to Facebook</p>
+
+					</a>
+
+				</div>
+
+				<div class="vido-socialbar-button">
+					
+					<a href="http://www.twitter.com/share?url={{shareUrl}}" target="_blank">
+						
+						<img src="assets/twitter-button.png" width="30" height="30" />
+						<p>Share on Twitter</p>
+
+					</a>
+
+				</div>
+
+			</p>
+
+		</div>
+
+		<div class="vido-socialbox">
+			
+			<p class="label">Copy Link:</p>
+
+			<p class="code">{{shareUrl}}</p>
+
+		</div>
+
+		<div class="vido-socialbox">
+
+			<p class="label">Embed Code:</p>
+
+			<p class="code">{{embedCode}}</p>
+
+			<div class="controls">
+
+				<div class="vido-inputfield">
+
+					<p class="field-label">Width : </p>
+
+					<input type="text" ng-model="width">
+
+				</div>
+
+				<div class="vido-inputfield">
+
+					<p class="field-label">Height : </p>
+
+					<input type="text" ng-model="height">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

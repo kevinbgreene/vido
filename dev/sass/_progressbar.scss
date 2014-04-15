@@ -1,0 +1,45 @@
+.vido-progress-bar {
+
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	top: -5px;
+	cursor: pointer;
+
+	@include trans;
+
+	div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.progress-indicator {
+		width: 2px;
+		background: #fff;
+	}
+
+	.progress-buffered {
+		background: #ddd;
+		background: rgba(222,222,222,0.7);
+	}
+
+	.progress-fill {
+		width: 0;
+		background: #e00b2e;
+		background: rgba(224,11,46,0.8);
+	}
+
+	.progress-background {
+		background: #ccc;
+		background: rgba(204,204,204,0.6);
+	}
+
+	&:hover {
+		height: 10px;
+		top: -10px;
+	}
+}

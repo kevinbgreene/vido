@@ -1,0 +1,30 @@
+<div class="vido-playlist">
+
+	<ul>
+
+		<li
+			class="entry"
+			ng-repeat="video in meta.playlist"
+			ng-class="{true:'active', false:''}[$index==meta.activeIndex]" >
+
+			<div
+				class="video"
+				ng-click="loadVideo('{{video.id}}', $event)">
+			
+				<p>{{video.name}}</p>
+			
+			</div>
+
+			<ul class="chapter" ng-show="false">
+				
+				<li ng-repeat="chapter in video.chapters">
+					<p>{{chapter.name}}</p>
+				</li>
+
+			</ul>
+
+		</li>
+
+	</ul>
+
+</div>

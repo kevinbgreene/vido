@@ -1,0 +1,35 @@
+/* ---------------------------------------------------------------------------------------
+    2.  VIDEO CONTROLLER
+----------------------------------------------------------------------------------------*/
+
+.vido-controller {
+
+	position: absolute;
+	padding: 0 10px;
+	width: 100%;
+	height: 40px;
+	bottom: -40px;
+	left: 0px;
+	z-index: 1;
+
+	opacity: 0.5;
+
+	@include gradient(rgba(20,20,20,0.7), rgba(10,10,10,0.7), #141414);
+
+	@include trans(#{opacity 0.5s, bottom 0.5s});
+
+	&.active {
+		opacity: 1.0;
+		bottom: 0px;
+	}
+
+	.vido-video-timer {
+		position: relative;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		font-size: 0.9em;
+		margin: 0 5px;
+		float: left;
+	}
+}
